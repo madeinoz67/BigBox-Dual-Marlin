@@ -204,9 +204,8 @@ Here are some standard links for getting your machine calibrated:
                                     // Set/get with gcode: M301 E[extruder number, 0-2]
   #define PID_FUNCTIONAL_RANGE 20 // If the temperature difference between the target temperature and the actual temperature
                                   // is more then PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
-  #define PID_INTEGRAL_DRIVE_MAX PID_MAX  //limit for the integral term
+  #define PID_INTEGRAL_DRIVE_MAX 127  //limit for the integral term
   #define K1 0.95 //smoothing factor within the PID
-  #define PID_dT ((16.0 * 8.0)/(F_CPU / 64.0 / 256.0)) //sampling period of the temperature routine
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
   // Ultimaker
@@ -225,9 +224,9 @@ Here are some standard links for getting your machine calibrated:
   //#define  DEFAULT_Kd 440
 
   // E3D v6 (PT100, 30W)
-  #define  DEFAULT_Kp 29.20
-  #define  DEFAULT_Ki 04.73
-  #define  DEFAULT_Kd 45.33
+  #define  DEFAULT_Kp 27.72
+  #define  DEFAULT_Ki 02.13
+  #define  DEFAULT_Kd 89.87 
 
 #endif // PIDTEMP
 
