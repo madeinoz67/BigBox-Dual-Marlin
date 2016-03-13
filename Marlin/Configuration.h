@@ -265,9 +265,9 @@ Here are some standard links for getting your machine calibrated:
   //#define  DEFAULT_bedKd 305.4
 
   //E3D BigBox Variable Power Density Heated Bed (24V)
-  #define  DEFAULT_bedKp 336
-  #define  DEFAULT_bedKi 61
-  #define  DEFAULT_bedKd 462.4
+  #define  DEFAULT_bedKp 204.84 
+  #define  DEFAULT_bedKi 38.59 
+  #define  DEFAULT_bedKd 271.82 
 
   //120v 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
